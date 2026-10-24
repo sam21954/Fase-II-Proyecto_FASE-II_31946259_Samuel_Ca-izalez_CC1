@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BinaryShop - Habilitar venta</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header id="encabezado"></header>
+  <div class="contenido">
+    <div class="caja estrecha">
+      <h2>Habilitar opciones de venta</h2>
+      <p>Confirma tus datos bancarios para poder vender. Seguirás siendo comprador.</p>
+      <label>Banco</label>
+      <input type="text" id="venderBanco">
+      <label>Número de cuenta</label>
+      <input type="text" id="venderCuenta">
+      <button class="boton" onclick="habilitarVenta()">Habilitar venta</button>
+      <p id="errorVender" class="error"></p>
+    </div>
+  </div>
+  <script src="js/datos.js"></script>
+  <script src="js/habilitar.js"></script>
+</body>
+</html>

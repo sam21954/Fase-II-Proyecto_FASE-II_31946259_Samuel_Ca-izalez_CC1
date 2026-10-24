@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BinaryShop - Panel de vendedor</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header id="encabezado"></header>
+  <div class="contenido">
+    <h2>Publicar producto</h2>
+    <div class="caja estrecha">
+      <label>Nombre del producto</label>
+      <input type="text" id="prodNombre">
+      <label>Descripción</label>
+      <textarea id="prodDescripcion" rows="3"></textarea>
+      <label>Precio ($)</label>
+      <input type="number" id="prodPrecio" step="0.01">
+      <label>Imagen</label>
+      <input type="file" id="prodImagen" accept="image/*">
+      <button class="boton" onclick="publicarProducto()">Publicar</button>
+      <p id="errorProd" class="error"></p>
+    </div>
+
+    <h2>Mis publicaciones</h2>
+    <div id="misProductos"></div>
+  </div>
+  <script src="js/datos.js"></script>
+  <script src="js/vendedor.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BinaryShop - Acceso</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <div class="banda">
+    <h1>BinaryShop</h1>
+    <p>Compra y vende productos de forma rápida y segura</p>
+  </div>
+
+  <div class="dos-columnas">
+
+    <div class="caja">
+      <h2>Iniciar sesión</h2>
+      <label>Nickname</label>
+      <input type="text" id="loginNick">
+      <label>Contraseña</label>
+      <input type="password" id="loginClave">
+      <label>Entrar como</label>
+      <select id="loginRol">
+        <option value="comprador">Comprador</option>
+        <option value="vendedor">Vendedor</option>
+        <option value="administrador">Administrador</option>
+      </select>
+      <button class="boton" onclick="iniciarSesion()">Entrar</button>
+      <p id="errorLogin" class="error"></p>
+      <p class="nota">
+        <b>Cuentas de prueba:</b><br>
+        ana / 1234 (comprador)<br>
+        pedro / 1234 (comprador, su pago es rechazado)<br>
+        luis / 1234 (vendedor)<br>
+        maria / 1234 (comprador y vendedor)<br>
+        admin / admin (administrador)
+      </p>
+    </div>
+
+    <div class="caja">
+      <h2>Crear cuenta</h2>
+      <label>Nombre</label>
+      <input type="text" id="regNombre">
+      <label>Apellido</label>
+      <input type="text" id="regApellido">
+      <label>Dirección</label>
+      <input type="text" id="regDireccion">
+      <label>Nickname</label>
+      <input type="text" id="regNick">
+      <label>Contraseña (mínimo 4 caracteres)</label>
+      <input type="password" id="regClave">
+      <label>Banco</label>
+      <input type="text" id="regBanco">
+      <label>Número de cuenta (10 a 20 dígitos)</label>
+      <input type="text" id="regCuenta">
+      <label>Rol</label>
+      <select id="regRol">
+        <option value="comprador">Comprador</option>
+        <option value="vendedor">Vendedor</option>
+      </select>
+      <button class="boton" onclick="registrarse()">Registrarse</button>
+      <p id="errorReg" class="error"></p>
+    </div>
+
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

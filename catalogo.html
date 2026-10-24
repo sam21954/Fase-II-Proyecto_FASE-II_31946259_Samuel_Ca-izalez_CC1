@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BinaryShop - Catálogo</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header id="encabezado"></header>
+
+  <div class="contenido">
+    <h2>Catálogo de productos</h2>
+    <div class="barra">
+      <input type="text" id="buscador" placeholder="Buscar producto..." oninput="dibujarCatalogo()">
+      <select id="orden" onchange="dibujarCatalogo()">
+        <option value="nuevo">Más recientes</option>
+        <option value="menor">Precio: menor a mayor</option>
+        <option value="mayor">Precio: mayor a menor</option>
+        <option value="nombre">Nombre (A-Z)</option>
+      </select>
+    </div>
+    <div id="listaProductos"></div>
+  </div>
+
+  <div id="fondoPago" class="oculto">
+    <div id="ventanaPago"></div>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/catalogo.js"></script>
+</body>
+</html>

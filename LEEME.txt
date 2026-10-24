@@ -1,0 +1,23 @@
+BinaryShop - Fase II
+
+Como usarlo: abre el archivo index.html.
+
+
+Cuentas de prueba:
+  ana / 1234     comprador
+  pedro / 1234   comprador (su pago es rechazado)
+  luis / 1234    vendedor
+  maria / 1234   comprador y vendedor
+  admin / admin  administrador
+
+Páginas:
+  index.html      login y registro (primera página)
+  catalogo.html   comprador: catálogo, carrito y pago
+  compras.html    comprador: historial de compras
+  habilitar.html  comprador: habilitar opciones de venta
+  vendedor.html   vendedor: publicar productos y ver los suyos
+  ventas.html     vendedor: historial de ventas
+  admin.html      administrador: eliminar cuentas y productos
+
+Para volver a los datos iniciales: borra los datos del sitio en el navegador
+(F12 > Application > Local Storage > Clear).
